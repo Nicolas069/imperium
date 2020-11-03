@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Let us try some animation</title>
+<script LANGUAGE="JavaScript" type="text/javascript">
+var cbox=0;
+var nbox=1;
+var cimage=0;
+var nimage=0;
+function preload(){
+    a1= new Image ();
+    a1.src= "car1.jpg";
+    a2= new Image ();
+    a2.src= "car2.jpg";
+    a3= new Image ();
+    a3.src= "car3.jpg";
+    a4= new Image ();
+    a4.src= "car4.jpg";
+    a5= new Image ();
+    a5.src= "car5.jpg";
+    a6= new Image ();
+    a6.src= "car6.jpg";
+    a7= new Image ();
+    a7.src= "car7.jpg";
+    a8= new Image ();
+    a8.src= "car8.jpg";
+    window.setTimeout("next()", 500);
+}
+function next(){
+    cimage +=1;
+    if (cimage>8){
+        cimage=4;
+        document.images[cbox].src="car0.jpg";
+        cbox= (cbox+1)%5;
+        nbox= (cbox+1)%5;
+    }
+    nimage=cimage-5;
+    if (nimage<=0) nimage=0;
+    document.images[cbox].src="car" +cimage+".jpg";
+    document.images[nbox].src="car"+nimage+".jpg";
+    window.setTimeout("next()", 100);
+}
+</script>
+</head>
+<body onLoad="preload()">
+<H1>MUMENA Transport Company</H1>
+<h2> WELCOME TO OUR OFFICIAL WEBSITE</h2>>
+<i> Mumena Transport Company is a Rwandan road transport agency, working in Rwanda and its borders. </i></br><i> It is our goal to satisfy your needs.</i></hr>
+<div> <a href="apply.html"><img src="apply.JPG" alt="APPLY FOR A JOB NOW"></a>
+<HR>
+<center>
+<img src="car0.jpg" width=100 height=100 alt="" border="0">
+<img src="car0.jpg" width=100 height=100 alt="" border="0">
+<img src="car0.jpg" width=100 height=100 alt="" border="0">
+<img src="car0.jpg" width=100 height=100 alt="" border="0">
+<img src="car0.jpg" width=100 height=100 alt="" border="0">
+</center>
+<HR>
+
+</body>
+</html>

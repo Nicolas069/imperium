@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Order for a ticket</title></head>
+<body>
+<script LANGUAGE="JavaScript" type="text/javascript">
+var b=prompt("Enter your names:");
+var c=prompt("Choose the number corresponding to the right destination:1 for within Kigali; 2 for other provinces; and 3 for the neighbouring countries");
+document.write("Your names are: "+b+", you are planning to go ");
+if (c==1){
+            document.write("within Kigali,");
+        }
+        else if (c==2) {
+            document.write("outside Kigali");
+        }
+        else if (c==3){
+            document.write("outside of Rwanda");
+        }
+        else {
+            document.write("(undefined)");
+        }
+        document.write(". So, you will have to pay ");
+      
+        if (c==1){
+            document.write("500 frw");
+        }
+        else if (c==2) {
+            document.write("1000 frw");
+        }
+        else if (c==3){
+            document.write("20,000");
+        }
+        else {
+            document.write("(undefined)");
+        }
+        document.write(" as your transport fee. Thank you for using our services, we'll be there along the road with an ambulance as we really don't trust our buses'safety.") 
+</script>
+</body>
+</html>
